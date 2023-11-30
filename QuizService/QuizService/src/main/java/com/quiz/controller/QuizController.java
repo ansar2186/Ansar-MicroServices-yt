@@ -23,17 +23,13 @@ public class QuizController {
 
         return quizService.addQuiz(quiz);
     }
-
-
     @GetMapping("/getAllQuiz")
     public List<Quiz> getQuiz() {
 
         return quizService.getAllQuiz();
     }
-
     @GetMapping("/{id}")
     public Quiz getQuizById(@PathVariable Long id) {
         return quizService.getQuiz(id);
-
     }
 }
