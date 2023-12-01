@@ -21,6 +21,7 @@ public class QuestionController {
     public Question createQuestion(@RequestBody Question question){
         return questionService.saveQuestion(question);
     }
+    //Question service
     @GetMapping("/getAllQuestion")
     public List<Question> getAllQuestion(){
         return questionService.getAllQuestion();
